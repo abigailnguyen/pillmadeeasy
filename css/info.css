@@ -1,0 +1,33 @@
+h3.title {
+    text-align: center;
+    font-family: 'PT Serif Caption', serif;
+    padding-bottom: 3rem;
+
+}
+
+.how-it-works {
+    background: rgb(36, 136, 234);
+    color: rgb(247, 246, 225);
+}
+
+.button.is-dark, .button.is-dark:hover {
+    background: #121238;
+    color: #f7f6e1;
+}
+
+.button {
+    cursor: pointer;
+    justify-content: center;
+    padding: calc(.375em - 1px) .75em;
+    text-align: center;
+    white-space: nowrap;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: none;
+    display: inline-flex;
+    line-height: 1.5;
+    position: relative;
+    vertical-align: top;
+    font-size: 1rem;
+}

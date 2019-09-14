@@ -1,0 +1,53 @@
+/* panel layout mechanics */
+.panel-wrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 30em;
+    transform: translateX(100%);
+    transition: .3s ease-out;
+  }
+  .panel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*background: #333;*/
+    background:#2488ea;
+    color: #eee;
+    overflow: auto;
+    padding: 1em;
+  }
+  
+  /* simulate panel state control --
+  this can also be triggered by a 
+  class name added to the body tag. 
+  Just using a checkbox sibling here
+  for simplicity*/
+  
+  [type="checkbox"]:checked ~ .panel-wrap {
+    transform: translateX(0%);
+  }
+
+  
+
+  /* demo display */
+  *,*:before, *:after {box-sizing: border-box;}
+  h3{
+      text-align: center;
+      font-weight: 400;
+      font-size: 32;
+      font-family: 'PT Serif Caption', serif;
+    }
+  p {
+    text-align: center;
+    line-height: 1.4;
+    margin: 2em 0 0 0;
+  }
+  [type="checkbox"] {
+    font-size: 1em;
+  }
+  
+  

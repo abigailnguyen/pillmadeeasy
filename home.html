@@ -8,8 +8,15 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,300,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,300,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link rel="stylesheet" type="text/css" href="css/info.css">
+
+
     <link rel="icon" type="image/png" href="images/favicon.png">
 
     <script
@@ -22,23 +29,37 @@
     </script>
 
     <script src="js/form.js" type="text/javascript" charset="utf-8" async="" defer=""></script>
+    <script src="js/slider.js" type="text/javascript" charset="utf-8" async="" defer=""></script>
 
     <!--<script src="/js/prefixfree.min.js" type="text/javascript" charset="utf-8"></script>-->
 </head>
 
 <body data-gr-c-s-loaded="true">
-    
-    <a name="2"></a>
+    <nav id="navbar">
+        <img class="logo" src="images/logo.png"/>
+        <a href="#home">Home</a>
+        <a href="signup">Sign Up</a>
+        <a href="">Contact</a>
+    </nav>
+    <a name="signup"></a>
     <section class="jellyfrisk">
         <div class="center">
             <!-- <h1 class="hero fadeInDown">JELLYFRISK</h1>
                 <h1 class="subhero fadeInDown">PHOTOGRAPHY</h1> -->
             <!-- multistep form -->
+           
+        </div>
+    </section>
+
+    <div class="panel-wrap">
+        <div class="panel">
+            <h3>Yay! Welcome!</h3>
+            <p>Some description to inspire the user to sign up!</p>
             <form id="msform">
                 <!-- progressbar -->
                 <ul id="progressbar">
-                    <li class="active">Account Setup</li>
-                    <li>Social Profiles</li>
+                    <li class="active">About You</li>
+                    <li>Create your account</li>
                     <li>Personal Details</li>
                 </ul>
                 <!-- fieldsets -->
@@ -51,11 +72,20 @@
                     <input type="button" name="next" class="next action-button" value="Next" />
                 </fieldset>
                 <fieldset>
-                    <h2 class="fs-title">Social Profiles</h2>
+                    <h2 class="fs-title">About you</h2>
                     <h3 class="fs-subtitle">Your presence on the social network</h3>
-                    <input type="text" name="twitter" placeholder="Twitter" />
-                    <input type="text" name="facebook" placeholder="Facebook" />
-                    <input type="text" name="gplus" placeholder="Google Plus" />
+                    <div class="inputGroup">
+                        <input id="radio1" name="radio" type="radio" />
+                        <label for="radio1">Under 20</label>
+                    </div>
+                    <div class="inputGroup">
+                        <input id="radio2" name="radio" type="radio" />
+                        <label for="radio2">20-35</label>
+                    </div>
+                    <div class="inputGroup">
+                        <input id="radio3" name="radio" type="radio" />
+                        <label for="radio3">35+</label>
+                    </div>
                     <input type="button" name="previous" class="previous action-button" value="Previous" />
                     <input type="button" name="next" class="next action-button" value="Next" />
                 </fieldset>
@@ -71,6 +101,56 @@
                 </fieldset>
             </form>
         </div>
+    </div>
+
+    <section class="how-it-works">
+        <h3 class="title">
+            How does PillMadeEasy work?
+        </h3>
+        <div class="info-table">
+            <table>
+                <th>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                </th>
+                <tr>
+                    <td>
+                            Have an online doctor's visit
+                            Have a secure, online consultation about your problem with an Australian doctor.
+                    </td>
+                    <td>
+                            Real treatments, prescribed
+                            Your doctor may then prescribe an Australian-standard medication (if appropriate).
+                    </td>
+                    <td>
+                            Free, discreet delivery
+                            Your treatment plan (and repeats) ship directly from a partner pharmacy to you.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+            <div class="buttons">
+                <button id="signUpBtn" class="button is-dark is-medium is-sans"><svg height="20" data-name="Layer 1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.21728 437.34673">
+                        <defs>
+                            <style>
+                                .cls-3 {
+                                    fill: #ffec7d;
+                                }
+                            </style>
+                        </defs>
+                        <title>bolt</title>
+                        <path
+                            d="M312.65405,201.66246c-16.07129-3.94051-32.17047-1.73448-48.44138-3.19344a22.83613,22.83613,0,0,1-2.51031-.37028l-36.16176,4.02712L270.21349,43.56013c-7.80164,7.61007-15.95078,14.8452-23.82208,22.40054L116.7441,267.85042c8.85649.33594,17.73093.3447,26.67123.43547,7.4211.07533,14.82852.33109,22.22631.47846,6.76727-.49435,13.57491-.297,20.34045-.74913,2.11438-.32174,4.226-.65812,6.3302-1.03018,5.01021-.88578,9.85913-1.98435,14.82646-2.08005a52.25626,52.25626,0,0,1,11.85691-.37892,1.44874,1.44874,0,0,1,1.15668,1.96912c-.875,1.64252-1.68345,3.31567-2.47057,4.9986a10.24013,10.24013,0,0,1-1.48107,3.45067,3.88064,3.88064,0,0,1-.31746.50665q-1.14432,2.59479-2.27141,5.197a11.24631,11.24631,0,0,1-1.43338,4.44738l-60.52,195.81138L284.00816,292.3407c13.07944-30.09572,33.68765-55.8995,47.95321-85.15975C325.56422,205.24477,319.17275,203.26118,312.65405,201.66246Z"
+                            transform="translate(-116.7441 -43.56013)" class="cls-3"></path>
+                    </svg>
+                    &nbsp; Start Now
+                </button></div>
+
     </section>
 
 
