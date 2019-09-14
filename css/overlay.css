@@ -1,0 +1,10 @@
+.overlay-content {
+    position: fixed;
+    background-color: rgba(247,246,225,.9);
+    min-height: 100vh;
+    height: 100%;
+    width: 100vw;
+    z-index: 31;
+    top: 0;
+    display: none;
+}
