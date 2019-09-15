@@ -1,7 +1,9 @@
 /* Style the navbar */
 #navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: transparent;
+    padding: 8px 1.2rem;
+    transition: background-color .3s cubic-bezier(.645,.045,.355,1),color .3s cubic-bezier(.645,.045,.355,1),box-shadow .3s cubic-bezier(.645,.045,.355,1),transform .3s cubic-bezier(.645,.045,.355,1),border-color .3s cubic-bezier(.645,.045,.355,1);
   }
   
   /* Navbar links */
